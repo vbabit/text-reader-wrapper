@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net45</TargetFrameworks>
+    <Authors>Vladlen Babitski</Authors>
+    <Company />
+    <Description>A wrapper on top of the standard System.IO.TextReader, which supports sequential asynchronous reading according to a given pattern, and extracts the required pieces of text.</Description>
+    <Copyright>© 2022 Vladlen Babitski</Copyright>
+    <PackageTags>textreader textreaderwrapper</PackageTags>
+    <RepositoryUrl>https://github.com/vbabit/text-reader-wrapper</RepositoryUrl>
+    <RepositoryType>Public</RepositoryType>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/vbabit/text-reader-wrapper/blob/main/README.md</PackageProjectUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Version>0.0.7-alpha</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <OutputPath>..\..\build\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\..\build\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="DevSpatium.IO.TextReader.csproj.DotSettings" />
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
