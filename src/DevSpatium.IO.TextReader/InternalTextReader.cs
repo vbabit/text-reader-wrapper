@@ -255,7 +255,7 @@ namespace DevSpatium.IO.TextReader
                 if (lineBreakIndex != -1)
                 {
                     result.Length -= buffer.Length - lineBreakIndex;
-                    break;
+                    return result.ToString();
                 }
 
                 currentChunkSize *= chunkSizeRatio;
@@ -268,7 +268,7 @@ namespace DevSpatium.IO.TextReader
         {
             cancelToken.ThrowIfCancellationRequested();
             var buffer = new char[_cache.Length - _position];
-            if (WithinCache(_position))
+            if (buffer.Length > 0)
             {
                 _cache.CopyTo(_position, buffer, 0, buffer.Length);
             }

@@ -13,7 +13,7 @@
     <PackageProjectUrl>https://github.com/vbabit/text-reader-wrapper/blob/main/README.md</PackageProjectUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>0.0.7-alpha</Version>
+    <Version>0.0.8-alpha</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
