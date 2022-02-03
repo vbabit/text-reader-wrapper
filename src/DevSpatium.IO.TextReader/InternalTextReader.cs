@@ -190,7 +190,8 @@ namespace DevSpatium.IO.TextReader
                 _cache.Append(result, index, actualCount);
             }
 
-            if (index + actualCount < count)
+            actualCount += index;
+            if (actualCount < count)
             {
                 Array.Resize(ref result, actualCount);
             }

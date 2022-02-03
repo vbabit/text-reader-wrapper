@@ -12,7 +12,6 @@
 
         public string Pattern { get; }
         public PatternPosition? Position { get; }
-
         public static PatternChunk Empty() => new PatternChunk();
         public override string ToString() => Pattern;
     }
