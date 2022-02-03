@@ -9,8 +9,8 @@ namespace DevSpatium.IO.TextReader.Tests
     public class TextReaderWrapperTests
     {
         [Theory]
-        [InlineData("Qux", @"S.R.", new[] { "b" })]
-        [InlineData("Qux", @"S[1]R[1]", new[] { "b" })]
+        [InlineData("Qux", @"S.R.", new[] { "u" })]
+        [InlineData("Qux", @"S[1]R[1]", new[] { "u" })]
         public async Task ReadAsync_OneChar_OutputContainsCorrectResult(
             string input,
             string pattern,
